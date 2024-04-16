@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "sora";
+    color: white;
+}
+
+#container{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+#perfil{
+    background: linear-gradient(to right, #5578BA, #40A376);
+    width: 25vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#perfil img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header h1{
+    font-weight: normal;
+    font-size: 8vw;
+}
+
+header h2{
+    color: #919193;
+    font-size: 3.5vw;
+    font-weight: normal;
+}
+
+main ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+main a{
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4vw 8%;
+    background: linear-gradient(to right, #5578BA, #40A376);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+a:hover{
+    border: 3px solid white;
+    box-sizing: border-box;
+}
+
+a:active{
+    transform: scale(0.95);
+}
+
+main p{
+    font-size: 4.5vw;
+    color: white;
+}
+
+main img{
+    height: 4.5vw;
+}
+
+nav ul{
+    height: 10vw;
+    width: 60vw;
+    margin-left: 3%;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li{
+    width: 10vw;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(to right, #5578BA, #40A376);
+}
+
+nav a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 50%;
+}
+
+#linkOne{
+    background-image: url("./image/twitter.png");
+}
+
+#linkTwo{
+    background-image: url("./image/whatsapp.png");
+}
+
+#linkThree{
+    background-image: url("./image/email.png");
+}
+
+#linkFour{
+    background-image: url("./image/phone.png");
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    #container{
+        width: 70vw;
+    }
+
+    #perfil{
+        width: 20vw;
+    }
+
+    header h1{
+        font-size: 4vw;
+    }
+    
+    header h2{
+        font-size: 3vw;
+    }
+    
+    main a{
+        padding: 3vw 8%;
+    }
+    
+    main p{
+        font-size: 3.5vw;
+    }
+    
+    main img{
+        height: 3.5vw;
+    }
+
+    nav ul{
+        height: 8vw;
+    }
+    
+    nav li{
+        width: 8vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    #container{
+        width: 60vw;
+        gap: 3vw;
+    }
+
+    header{
+        gap: 1vw;
+    }
+
+    #perfil{
+        width: 15vw;
+    }
+
+    header h1{
+        font-size: 3.8vw;
+    }
+    
+    header h2{
+        font-size: 2.5vw;
+    }
+
+    main ul{
+        gap: 2vw;
+    }
+    
+    main a{
+        padding: 2.5vw 7%;
+    }
+    
+    main p{
+        font-size: 2.5vw;
+    }
+    
+    main img{
+        height: 2.5vw;
+    }
+
+    nav ul{
+        height: 6vw;
+    }
+    
+    nav li{
+        width: 6vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    body{
+        height: auto;
+    }
+    
+    #container{
+        width: 50vw;
+        height: auto;
+        margin: 10vh auto;
+        gap: 3vw;
+        
+    }
+
+    header{
+        gap: 1vw;
+    }
+
+    #perfil{
+        width: 15vw;
+    }
+
+    header h1{
+        font-size: 3.8vw;
+    }
+    
+    header h2{
+        font-size: 2.5vw;
+    }
+
+    main ul{
+        gap: 2vw;
+    }
+    
+    main a{
+        padding: 2.5vw 7%;
+    }
+    
+    main p{
+        font-size: 2.5vw;
+    }
+    
+    main img{
+        height: 2.5vw;
+    }
+
+    nav ul{
+        height: 6vw;
+    }
+    
+    nav li{
+        width: 6vw;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    #container{
+        width: 40vw;
+        gap: 2.5vw;
+    }
+
+    header{
+        gap: 1vw;
+    }
+
+    #perfil{
+        width: 9vw;
+    }
+
+    header h1{
+        font-size: 2.5vw;
+    }
+    
+    header h2{
+        font-size: 1.5vw;
+    }
+
+    main ul{
+        gap: 2vw;
+    }
+    
+    main a{
+        padding: 1.2vw 7%;
+    }
+    
+    main p{
+        font-size: 1.8vw;
+    }
+    
+    main img{
+        height: 1.8vw;
+    }
+
+    nav ul{
+        height: 4vw;
+    }
+    
+    nav li{
+        width: 4vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #container{
+        width: 30vw;
+        gap: 2vw;
+    }
+
+    header{
+        gap: 1vw;
+    }
+
+    #perfil{
+        width: 8vw;
+    }
+
+    header h1{
+        font-size: 1.8vw;
+    }
+    
+    header h2{
+        font-size: 1.2vw;
+    }
+    
+    main ul{
+        gap: 1.5vw;
+    }
+
+    main a{
+        padding: 1vw 8%;
+    }
+    
+    main p{
+        font-size: 1.4vw;
+    }
+    
+    main img{
+        height: 1.4vw;
+    }
+
+    nav ul{
+        height: 3.7vw;
+    }
+    
+    nav li{
+        width: 3.7vw;
+    }
+}
